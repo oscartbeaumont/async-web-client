@@ -1,5 +1,5 @@
 mod http;
-mod ws;
+// mod ws;
 
 use std::{
     io,
@@ -18,7 +18,7 @@ use futures_rustls::{
     TlsConnector,
 };
 use rustls_pki_types::{InvalidDnsNameError, ServerName, TrustAnchor};
-pub use ws::*;
+// pub use ws::*;
 
 pub enum Transport {
     Tcp(TcpStream),
